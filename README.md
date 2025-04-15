@@ -85,10 +85,86 @@ No nível Mestre, você implementará a comparação entre duas cartas e o cálc
 
 **Observação:**  Preste atenção à conversão de tipos ao calcular o Super Poder!
 
-
 ## 🏁 Conclusão
 
 Ao concluir qualquer um dos níveis, você terá dado um passo importante no desenvolvimento do Super Trunfo - Países. Boa sorte e divirta-se programando!
 
 Equipe de Ensino - MateCheck
 content_copy
+
+---
+
+## ✅ Como compilar e executar o programa
+
+### **Pré-requisitos**  
+Certifique-se de que você tem o compilador `gcc` instalado.
+
+### **Compilar o programa**
+Abra o terminal na pasta onde está seu código fonte e digite:
+
+```bash
+gcc super_trunfo.c -o super_trunfo
+```
+
+### **Executar o programa**
+
+```bash
+./super_trunfo
+```
+
+---
+
+## 🕹️ Como utilizar o programa
+
+O programa simula uma rodada de Super Trunfo entre dois países. Você escolherá **dois atributos diferentes** para comparar.
+
+### **Atributos disponíveis para comparação:**
+
+1. População (milhões)  
+2. Área (km²)  
+3. PIB (bilhões de USD)  
+4. Densidade Demográfica (hab/km²) → **Vence quem tiver o menor valor**
+
+---
+
+## 📋 Exemplo de uso
+
+Ao iniciar o programa, será exibido o seguinte menu para escolher o primeiro atributo:
+
+```
+Escolha o primeiro atributo para comparar:
+1 - População
+2 - Área
+3 - PIB
+4 - Densidade Demográfica
+> 
+```
+
+Após escolher, por exemplo, a opção **2 (Área)**, o menu será exibido novamente **sem repetir o atributo já escolhido**:
+
+```
+Escolha o segundo atributo para comparar:
+1 - População
+3 - PIB
+4 - Densidade Demográfica
+> 
+```
+
+Depois disso, o sistema exibirá as duas cartas e comparará os dois atributos da seguinte forma:
+
+- Indica o valor de cada atributo em cada país.
+- Calcula a soma total dos dois atributos por carta.
+- Mostra qual carta venceu ou se houve empate.
+
+---
+
+## 🛠️ Observações
+
+- A Densidade Demográfica segue uma regra especial: vence quem **tiver o menor valor**.
+- O sistema impede que o usuário selecione o mesmo atributo duas vezes.
+- O programa trata entradas inválidas com mensagens de erro e permite repetir a escolha.
+
+---
+
+
+
